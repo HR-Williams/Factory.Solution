@@ -1,27 +1,15 @@
 <div align="center">
 
-# Application Name
+# Dr. Sillystringz's Factory
 
 </div>
 
-<h3 align="center">Description of application, date-2021</h3>
+<h3 align="center">An app for factory machine repairs, 6-7-2021</h3>
 <h4 align="center"> By HR Williams</h4>
 
 ## Description
 
-Purpose usage, detailed explanation what is does and any other information you want users and other developers to have
-
-## Specifications/User Stories
-
-<details>
-  <summary>Expand</summary>
-
-### Describe: Name()
-
-| Test | Expect |
-| ---- | ------ |
-
-</details>
+This is an independet project for Epicodus to demonstrate new skills in C#/.NET Many-To-Many Relationships. This MVC app allows a factory owner to manage their engineers, and the machines they are licensed to fix.
 
 ## Setup/Installation Requirements
 
@@ -33,10 +21,7 @@ Purpose usage, detailed explanation what is does and any other information you w
 
 ##### Open Locally
 
-- Click on the link to my repository: [My Repository]()
-- Click on the green "Code" button and copy the repository URL
-- Open your terminal and use the command `git clone REPO URL HERE` into the directory you would like to clone the repository
-- Open in text editor to view code and make changes
+- Open your terminal and use the command `git clone https://github.com/HR-Williams/Factory.Solution` into the directory you would like to clone the repository
 
 ##### Installing .NET
 
@@ -63,12 +48,12 @@ MySQL is a type of database software used to create, edit, query, and manage SQL
 
 ##### Compiling
 
-- Navigate to the TODO folder in the command line
+- Navigate to the `Factory` folder in the command line
 - Use the command `dotnet build` to compile
 
 ##### Installing Packages
 
-- Navigate to the TODO folder in the command line
+- Navigate to the `Factory` folder in the command line
 - Use the command `dotnet restore`
 
 <details>
@@ -85,24 +70,23 @@ Create a connection string to connect the database to the web application
 ```
 {
   "ConnectionStrings": {
-      "DefaultConnection": "Server=localhost;Port=3306;database=top_restaurants;uid=root;pwd=password;"
+      "DefaultConnection": "Server=localhost;Port=3306;database=[your_database_name_here];uid=root;pwd=[YOUR-PASSWORD-HERE];"
   }
 }
 ```
 
-- TODO CHANGE DBNAME
-- Put in your MySQL password in `pwd=YourPassword`. Change the server, port, and uid if necessary.
+- Update all the information above in the square brackets. Put in your MySQL password in `pwd=YourPassword`. If you named the database the same name as the .sql file that was imported, then `database =` should be `hr_williams`. Change the server, port, and uid if necessary.
 
 ### Import Database Using Entity Framework Core
 
-1. Navigate to TODO directory in terminal
+1. Navigate to `Factory` directory in terminal
 2. Use the command `dotnet ef database update` to generate the database through Entity Framework Core
 
-### Update Database Using Entity Framework Core
+<!-- ### Update Database Using Entity Framework Core
 
 1. Write any new code you wish to add to the database. Use the command `dotnet build` to check for any compiling errors. If no errors, proceed to step 2.
 2. To update the database with any changes made to the code, use the command `dotnet ef migrations add [MigrationsName]`
-3. Use the command `dotnet ef database update` to update the database
+3. Use the command `dotnet ef database update` to update the database -->
 
 ### Update Database Using MySQL Workbench
 
@@ -118,13 +102,13 @@ Create a connection string to connect the database to the web application
 
 ##### View In Browser
 
-- To view in browser, navigate to TODO folder in the command line
+- To view in browser, navigate to `Factory` folder in the command line
 - Use the command `dotnet run` to execute the compiled code and start a localhost
 - In browser navigate to http://localhost:5000
 
 ## Known Bugs
 
-TODO
+I would like to style this app
 
 ## Support and Contact Details
 
