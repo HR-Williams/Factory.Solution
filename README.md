@@ -77,16 +77,12 @@ Create a connection string to connect the database to the web application
 
 - Update all the information above in the square brackets. Put in your MySQL password in `pwd=YourPassword`. If you named the database the same name as the .sql file that was imported, then `database =` should be `hr_williams`. Change the server, port, and uid if necessary.
 
-### Import Database Using Entity Framework Core
+### Import/Update Database Using Entity Framework Core
 
-1. Navigate to `Factory` directory in terminal
-2. Use the command `dotnet ef database update` to generate the database through Entity Framework Core
-
-<!-- ### Update Database Using Entity Framework Core
-
-1. Write any new code you wish to add to the database. Use the command `dotnet build` to check for any compiling errors. If no errors, proceed to step 2.
-2. To update the database with any changes made to the code, use the command `dotnet ef migrations add [MigrationsName]`
-3. Use the command `dotnet ef database update` to update the database -->
+- Navigate to `Factory` directory in terminal
+- To create a migration in the root directory of the project, use the command: `dotnet ef migrations add Initial`
+- Use the command `dotnet ef database update` to update the database migration through Entity Framework Core
+-To restore database use the command: `dotnet ef database restore`
 
 ### Update Database Using MySQL Workbench
 
