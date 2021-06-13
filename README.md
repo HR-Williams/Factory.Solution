@@ -82,7 +82,7 @@ Create a connection string to connect the database to the web application
 - Navigate to `Factory` directory in terminal
 - To create a migration in the root directory of the project, use the command: `dotnet ef migrations add Initial`
 - Use the command `dotnet ef database update` to update the database migration through Entity Framework Core
--To restore database use the command: `dotnet ef database restore`
+
 
 ### Update Database Using MySQL Workbench
 
